@@ -263,15 +263,6 @@ nav a:hover::after {
   height: 40px;
 }
 
-nav ul {
-  transition: all 0.3s ease;
-  transform: translateY(-10px);
-  opacity: 0;
-  visibility: hidden;
-  max-height: 0;
-  overflow: hidden;
-}
-
 nav ul.nav-open {
   display: flex;
   flex-direction: column;
