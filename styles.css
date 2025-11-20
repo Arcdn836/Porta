@@ -1125,11 +1125,12 @@ footer span strong {
         padding: 0.75rem 1rem;
         gap: 1rem;
         justify-content: space-between;
+        max-width: none;
+        margin: 0;
       }
 
       .nav-toggle {
         display: block;
-        animation: fadeInRight 0.8s ease-out;
       }
 
       nav ul {
