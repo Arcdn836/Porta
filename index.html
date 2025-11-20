@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Ezequiel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+</head>
+<body class="noise-bg">
+  <header>
+    <div class="nav-inner">
+      <div class="logo">
+        <div class="logo-mark"><span>EZ</span></div>
+        <div>
+          <div class="logo-text-main">Ezequiel</div>
+          <div class="logo-text-sub">Ciberseguridad · Redes · Desarrollo</div>
+        </div>
+      </div>
+      <button class="nav-toggle" onclick="toggleNav()">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#proyectos" onclick="toggleNav()">Proyectos</a></li>
+          <li><a href="#sobre-mi" onclick="toggleNav()">Sobre mí</a></li>
+          <li><a href="#skills" onclick="toggleNav()">Stack</a></li>
+          <li><a href="#contacto" onclick="toggleNav()">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="nav-cta" onclick="scrollToSection('contacto')">
+        <i class="fas fa-envelope"></i>
+        <span>Disponible para proyectos</span>
+        <span>↗</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div>
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-pill"></div>
+          <span>Monitorización, redes y código, en el mismo paquete.</span>
+        </div>
+        <h1 class="hero-title">
+          Ezequiel · <span>Ciberseguridad, Redes y Desarrollo</span>
+        </h1>
+        <p class="hero-subtitle">
+          Diseño soluciones donde la seguridad no es un extra, sino el punto de partida: monitorización de red, segmentación, scripts en Python y herramientas web enfocadas en uso real.
+        </p>
+        <div class="hero-highlight">
+          <span>⚡</span>
+          <span>De "no vemos nada en la red" a alertas en tiempo real en WhatsApp.</span>
+        </div>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="scrollToSection('proyectos')">
+            <i class="fas fa-eye"></i> Ver proyectos
+            <span>↓</span>
+          </button>
+          <button class="btn-ghost" onclick="scrollToSection('sobre-mi')">
+            <i class="fas fa-user"></i> Mi enfoque de trabajo
+          </button>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-block">
+            <div class="hero-meta-label">Especialidad</div>
+            <div class="hero-meta-value">Ciberseguridad defensiva y redes</div>
+          </div>
+          <div class="hero-meta-block">
+            <div class="hero-meta-label">Stack principal</div>
+            <div class="hero-meta-value">Python · React · Node · Cisco</div>
+          </div>
+          <div class="hero-meta-block">
+            <div class="hero-meta-label">Enfoque</div>
+            <div class="hero-meta-value">Probar, romper, entender y mejorar</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <article class="orbit-card" aria-label="Resumen de perfil">
+          <div>
+            <div class="orbit-badge-row">
+              <span class="orbit-tag">Perfil técnico mixto</span>
+              <span>Práctica · Laboratorio · Casos reales</span>
+            </div>
+            <div class="orbit-avatar">
+              <div class="orbit-avatar-circle">
+                <div class="orbit-avatar-initials">EZ</div>
+              </div>
+              <div class="orbit-avatar-label">Ciberseguridad · Redes · Dev</div>
+            </div>
+            <div class="orbit-grid">
+              <div class="pill pill-strong">Monitorización de red</div>
+              <div class="pill">IDS en Python</div>
+              <div class="pill">Alertas WhatsApp</div>
+              <div class="pill">VLAN &amp; ACL</div>
+              <div class="pill">React + TS</div>
+              <div class="pill">Node + PostgreSQL</div>
+            </div>
+          </div>
+          <div class="orbit-footer">
+            <div>
+              <span>Último foco:</span>
+              <br />
+              <strong>Detección temprana de tráfico sospechoso</strong>
+            </div>
+            <div style="text-align: right;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 0.25rem;">
+                <span class="status-dot"></span>
+                <span>Abierto a colaboraciones</span>
+              </div>
+              <div style="font-size: 0.7rem; opacity: 0.8; margin-top: 0.15rem;">Proyectos remotos · Híbridos</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="section-label">Proyectos seleccionados</div>
+      <h2 class="section-title">Proyectos donde la seguridad está integrada, no parcheada</h2>
+      <p class="section-subtitle">
+        Algunos ejemplos de cómo combino redes, ciberseguridad y desarrollo para resolver problemas concretos. Nada de "hola mundo"; todo tiene contexto.
+      </p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-tag">Monitorización de red · IDS</div>
+          <h3 class="project-title">Sistema de monitoreo en tiempo real para red corporativa</h3>
+          <p class="project-meta">Python · Scapy · Linux · Twilio WhatsApp</p>
+          <p class="project-desc">
+            Script que analiza paquetes en tiempo real, identifica patrones sospechosos y envía alertas automáticas por WhatsApp cuando detecta eventos anómalos en la red.
+          </p>
+          <p class="project-stack"><strong>Rol:</strong> diseño de reglas, captura de tráfico, lógica de alertas y pruebas en laboratorio.</p>
+          <div class="project-footer">
+            <span>Foco: visibilidad de red y respuesta temprana</span>
+            <a href="#" class="project-link" onclick="alert('Aquí iría el detalle completo del proyecto o un link externo.')">
+              Ver detalle <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Redes · Segmentación</div>
+          <h3 class="project-title">Diseño de red segura con VLAN, ACL y NAT</h3>
+          <p class="project-meta">Cisco IOS · VLAN · ACL · Routing</p>
+          <p class="project-desc">
+            Segmentación de la red en múltiples VLAN, control de tráfico con ACLs y configuración de NAT para separar áreas críticas y reducir la superficie de ataque.
+          </p>
+          <p class="project-stack"><strong>Rol:</strong> direccionamiento, configuración de equipos, pruebas y documentación.</p>
+          <div class="project-footer">
+            <span>Foco: aislar y controlar el tráfico</span>
+            <a href="#" class="project-link" onclick="alert('Aquí podrías mostrar diagramas de la red y configuraciones clave.')">
+              Ver topología <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Web app · Herramientas internas</div>
+          <h3 class="project-title">Panel para tienda y service desk técnico</h3>
+          <p class="project-meta">React · TypeScript · Tailwind · Node · PostgreSQL</p>
+          <p class="project-desc">
+            Aplicación que unifica gestión de ventas, alquiler de equipos, gastos y tickets de servicio, con modales, vistas responsivas y flujos pensados para técnicos y usuarios.
+          </p>
+          <p class="project-stack"><strong>Rol:</strong> diseño UI, lógica de frontend, modelos en backend y flujos de datos.</p>
+          <div class="project-footer">
+            <span>Foco: reducir fricción operativa</span>
+            <a href="#" class="project-link" onclick="alert('Aquí iría un demo, capturas de pantalla o un video corto.')">
+              Ver interfaz <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Automatización · Seguridad</div>
+          <h3 class="project-title">Scripts de diagnóstico y hardening básico</h3>
+          <p class="project-meta">Python · Bash · Linux</p>
+          <p class="project-desc">
+            Conjunto de scripts para revisar servicios, detectar configuraciones débiles y aplicar ajustes básicos de hardening en entornos Linux orientados a uso cotidiano.
+          </p>
+          <p class="project-stack"><strong>Rol:</strong> análisis de necesidades, scripting y documentación de uso.</p>
+          <div class="project-footer">
+            <span>Foco: reducir errores manuales</span>
+            <a href="#" class="project-link" onclick="alert('Aquí podrías enlazar a un repo de GitHub.')">
+              Ver scripts <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Creativo · Técnico</div>
+          <h3 class="project-title">Juego tipo roguelike / prototipo</h3>
+          <p class="project-meta">Godot o Pygame · Diseño de sistemas</p>
+          <p class="project-desc">
+            Proyecto personal para combinar lógica de programación, diseño de estados y creación de interfaces minimalistas centradas en feedback rápido al jugador.
+          </p>
+          <p class="project-stack"><strong>Rol:</strong> lógica de juego, sistemas de estado y diseño de HUD.</p>
+          <div class="project-footer">
+            <span>Foco: creatividad aplicada a sistemas</span>
+            <a href="#" class="project-link" onclick="alert('Aquí iría un video corto o capturas del juego.')">
+              Ver demo <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Documentación · Exposición</div>
+          <h3 class="project-title">Material técnico para presentaciones y auditorías</h3>
+          <p class="project-meta">Canva · Diagramas · ISO 27001 (contexto académico)</p>
+          <p class="project-desc">
+            Elaboración de material visual que explica problemas de seguridad, impactos en negocio y beneficios de implementar monitorización y buenas prácticas de red.
+          </p>
+          <p class="project-stack"><strong>Rol:</strong> síntesis de información técnica y comunicación clara.</p>
+          <div class="project-footer">
+            <span>Foco: que cualquiera entienda el riesgo</span>
+            <a href="#" class="project-link" onclick="alert('Aquí irían PDFs, links a presentaciones o fragmentos de texto.')">
+              Ver materiales <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre-mi">
+      <div class="section-layout-dual">
+        <div>
+          <div class="section-label">Sobre mí</div>
+          <h2 class="section-title">Seguridad, redes y código en el mismo cerebro</h2>
+          <p class="section-subtitle">
+            No trabajo la seguridad como algo que se añade al final. Para mí, la red, el sistema y el usuario forman parte del mismo problema.
+          </p>
+          <div class="about-card">
+            <p>
+              Soy Ezequiel, estudiante de ciberseguridad con foco en la práctica. Me muevo cómodo entre tres capas: la red (VLAN, ACL, routing), la seguridad (detección, hardening básico, pruebas) y el desarrollo (scripts, herramientas web, automatización).
+            </p>
+            <p>
+              Me interesa entender cómo fallan las cosas en la vida real: configuraciones rápidas, redes sin segmentar, usuarios que clickean enlaces raros. A partir de ahí, diseño soluciones que tengan sentido para quien las usa, no solo para el papel.
+            </p>
+            <p>
+              Alterno proyectos técnicos con parte creativa (juegos, interfaces, escritura). Eso me ayuda a explicar sistemas complejos sin perderme en jerga.
+            </p>
+            <div class="about-tags">
+              <span class="about-tag">Aprendizaje basado en prueba y error</span>
+              <span class="about-tag">Laboratorios y entornos de práctica</span>
+              <span class="about-tag">Documentación clara para usuarios reales</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="skills">
+          <div class="section-label">Stack técnico</div>
+          <h2 class="section-title">Lo que uso para romper y mejorar sistemas</h2>
+          <div class="skills-grid">
+            <div class="skills-card">
+              <div class="skills-title">Ciberseguridad</div>
+              <div class="skills-list">
+                <span class="skills-item"><strong>Tráfico de red</strong> con Python y herramientas de análisis</span>
+                <span class="skills-item">Uso de Linux para tareas defensivas y ofensivas básicas</span>
+                <span class="skills-item">Detección de configuraciones débiles y malas prácticas</span>
+                <span class="skills-item">Diseño de alertas accionables para incidentes</span>
+              </div>
+              <div class="skills-note">Enfoque en visibilidad y respuesta rápida, no solo en listas de controles.</div>
+            </div>
+
+            <div class="skills-card">
+              <div class="skills-title">Redes</div>
+              <div class="skills-list">
+                <span class="skills-item">Segmentación con <strong>VLAN</strong> y planificación de subredes</span>
+                <span class="skills-item">Control de tráfico con <strong>ACL</strong> y reglas claras</span>
+                <span class="skills-item">Configuración de NAT y routing en entornos Cisco</span>
+                <span class="skills-item">Uso de herramientas de diagnóstico para encontrar cuellos de botella</span>
+              </div>
+              <div class="skills-note">Busco que la topología tenga sentido para el negocio, no solo para el diagrama.</div>
+            </div>
+
+            <div class="skills-card">
+              <div class="skills-title">Desarrollo</div>
+              <div class="skills-list">
+                <span class="skills-item"><strong>Python</strong> para scripts, automatización y análisis</span>
+                <span class="skills-item"><strong>React + TypeScript</strong> para interfaces enfocadas en uso real</span>
+                <span class="skills-item"><strong>Node · Express · PostgreSQL</strong> para APIs y paneles internos</span>
+                <span class="skills-item">Integración con APIs externas (Twilio, servicios de terceros)</span>
+              </div>
+              <div class="skills-note">Me importa que la herramienta se pueda usar en el día a día sin manual de 40 páginas.</div>
+            </div>
+
+            <div class="skills-card">
+              <div class="skills-title">Documentación · Comunicación</div>
+              <div class="skills-list">
+                <span class="skills-item">Material visual para explicar riesgos de forma simple</span>
+                <span class="skills-item">Resúmenes técnicos pensados para gerencia y usuarios</span>
+                <span class="skills-item">Apoyo en presentaciones de proyectos y auditorías</span>
+                <span class="skills-item">Capacidad de pasar de diagrama a implementación</span>
+              </div>
+              <div class="skills-note">Traducir jerga técnica a decisiones claras es parte del trabajo.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="section-label">Contacto</div>
+      <h2 class="section-title">¿Te interesa reforzar tu red o tus herramientas?</h2>
+      <p class="section-subtitle">
+        Si necesitas a alguien que no solo programe, sino que piense en la red, en la seguridad y en el usuario al mismo tiempo, podemos hablar.
+      </p>
+
+      <div class="contact-wrapper">
+        <p class="contact-intro">
+          Rellena el formulario o usa los enlaces directos. Esta demo no envía mails reales, pero muestra cómo podría ser el flujo.
+        </p>
+        <div class="contact-grid">
+          <form class="contact-form" onsubmit="handleContactSubmit(event)">
+            <div>
+              <label class="field-label" for="name">Nombre</label>
+              <input id="name" class="field-input" type="text" placeholder="Tu nombre" />
+              <div id="error-name" class="field-error">Pon al menos 2 caracteres.</div>
+            </div>
+            <div>
+              <label class="field-label" for="email">Correo</label>
+              <input id="email" class="field-input" type="email" placeholder="tunombre@dominio.com" />
+              <div id="error-email" class="field-error">Escribe un correo válido.</div>
+            </div>
+            <div>
+              <label class="field-label" for="message">Mensaje</label>
+              <textarea id="message" class="field-textarea" placeholder="Cuéntame brevemente qué necesitas."></textarea>
+              <div id="error-message" class="field-error">Dame algo de contexto (mínimo 10 caracteres).</div>
+            </div>
+            <button id="contact-submit" class="btn-primary" type="submit">
+              Enviar (demo)
+            </button>
+            <div id="contact-status" class="field-error" style="display:none; margin-top:0.35rem;"></div>
+          </form>
+
+          <div class="contact-asides">
+            <div>
+              <div class="contact-pill-row">
+                <span class="contact-pill">Disponible para proyectos remotos</span>
+                <span class="contact-pill">Horarios flexibles</span>
+              </div>
+            </div>
+            <div>
+              <div class="contact-status">
+                <span class="status-dot"></span>
+                <span>Respuesta típica: breve y directa.</span>
+              </div>
+            </div>
+            <div>
+              <p style="margin-bottom:0.3rem;">Enlaces directos</p>
+              <div class="contact-links">
+                <a class="contact-link" href="mailto:tu-correo@ejemplo.com"><i class="fas fa-envelope"></i> tu-correo@ejemplo.com</a>
+                <a class="contact-link" href="https://github.com/tu-usuario" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> GitHub · proyectos y scripts</a>
+                <a class="contact-link" href="https://www.linkedin.com" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i> LinkedIn · perfil profesional</a>
+                <a class="contact-link" href="https://wa.me/51900000000" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp · contacto rápido</a>
+              </div>
+            </div>
+            <div>
+              <p style="margin-bottom:0.3rem;">Herramientas habituales</p>
+              <div class="tool-list">
+                <span class="tool-item">Kali / Parrot</span>
+                <span class="tool-item">Wireshark</span>
+                <span class="tool-item">Packet Tracer</span>
+                <span class="tool-item">VSCode</span>
+                <span class="tool-item">Postman</span>
+                <span class="tool-item">Canva</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Portafolio de <strong>Ezequiel</strong> · Ciberseguridad, redes y desarrollo.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
